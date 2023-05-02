@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div>Home</div>
+  <div>Login</div>
 </template>
 
 <style lang="scss" scoped></style>
