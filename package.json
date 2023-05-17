@@ -2,7 +2,7 @@
   "name": "vue3-vite-template",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "test:unit": "vitest --environment jsdom",
@@ -24,6 +24,7 @@
     "prettier": "^2.5.1",
     "sass": "^1.62.1",
     "vite": "^3.0.1",
+    "vite-plugin-html-env": "^1.2.7",
     "vitest": "^0.18.1"
   },
   "eslintConfig": {
@@ -32,7 +33,10 @@
       "plugin:vue/recommended",
       "eslint:recommended",
       "@vue/prettier"
-    ]
+    ],
+    "rules": {
+      "vue/no-multiple-template-root": "off"
+    }
   },
   "prettier": {
     "trailingComma": "es5",
